@@ -12,5 +12,6 @@ services:
       - ../.env
     volumes:
       - ../:/app
+      - $SERVERDIR:/app/server
     ports:
       - 15761:25565
