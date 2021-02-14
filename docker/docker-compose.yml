@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+
+  mc:
+    restart: always
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+      target: mc
+    env_file:
+      - ../.env
+    volumes:
+      - ../:/app
+    ports:
+      - 15761:25565

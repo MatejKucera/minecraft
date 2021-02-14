@@ -1,4 +1,5 @@
 .idea
 .code
 server/*
+logs/*
 eula.txt
