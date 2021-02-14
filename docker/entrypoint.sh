@@ -8,9 +8,9 @@
 #echo "helo!"
 #echo "oops"
 
-#echo $RUN_SERVER
+echo $RUN_SERVER
 
-if [ $RUN_SERVER ] ; then
+if [ $RUN_SERVER = "true" ] ; then
     echo "is true";
     java -Xms1G -Xmx1G -XX:+UseG1GC -jar /app/server/spigot-1.16.5.jar nogui
 else
