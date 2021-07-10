@@ -1,11 +1,11 @@
-FROM debian AS mc
+FROM openjdk:16-jdk-buster AS mc
 
 RUN apt-get upgrade -yqq && \
     apt-get update -yqq
 
 RUN apt-get install git wget software-properties-common -yqq
 
-RUN apt-get install default-jre -yqq
+#RUN apt-get install default-jre -yqq
 
 
 #RUN apt-get install software-properties-common -yqq
