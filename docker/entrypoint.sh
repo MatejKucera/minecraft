@@ -1,4 +1,4 @@
- #!/bin/sh
+#!/bin/sh
 
 #if [ -f /app/.env ]
 #then
@@ -12,7 +12,7 @@ echo $RUN_SERVER
 
 if [ $RUN_SERVER = "true" ] ; then
     echo "is true";
-    java -Xms1G -Xmx1G -XX:+UseG1GC -jar /app/server/spigot-1.16.5.jar nogui
+    java -Xms1G -Xmx1G -XX:+UseG1GC -jar /app/server/spigot-1.17.1.jar nogui
 else
     echo "is false";
     tail -f /dev/null
