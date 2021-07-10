@@ -15,3 +15,4 @@ services:
       - $SERVERDIR:/app/server
     ports:
       - 15761:25565
+      - 8123:8123

@@ -7,7 +7,6 @@ RUN apt-get install git wget software-properties-common -yqq
 
 #RUN apt-get install default-jre -yqq
 
-
 #RUN apt-get install software-properties-common -yqq
 #RUN add-apt-repository ppa:linuxuprising/java && \
 #    apt-get update -yqq     && \
