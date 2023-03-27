@@ -11,8 +11,12 @@ services:
     env_file:
       - ../.env
     volumes:
-      - ../:/app
-      - $SERVERDIR:/app/server
+    #  - ../:/app
+      - ../plugins:/app/plugins
+      - ../eula.txt:/app/eula.txt
+      - ../server.properties:/app/server.properties
+      - $SERVERDIR:/app/worlds
     ports:
-      - 15761:25565
-      - 8123:8123
+      - $GAME_PORT:25565
+      - $RCON_PORT:25575
+      - $DYNMAP_PORT:8123

@@ -8,17 +8,15 @@
 #echo "helo!"
 #echo "oops"
 
-echo $RUN_SERVER
+rm -rf /app/.git
 
 if [ $RUN_SERVER = "true" ] ; then
     echo "is true";
-    java -Xms4G -Xmx4G -XX:+UseG1GC -jar /app/server/spigot-1.17.1.jar nogui
+    java -Xms4G -Xmx4G -XX:+UseG1GC -jar /app/spigot-1.19.3.jar nogui
 else
     echo "is false";
     tail -f /dev/null
 fi
-
-rm -rf /app/server/.git
 
 
 
