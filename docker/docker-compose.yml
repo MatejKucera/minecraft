@@ -13,7 +13,6 @@ services:
     volumes:
     #  - ../:/app
       - ../plugins:/app/plugins
-      - ../eula.txt:/app/eula.txt
       - ../server.properties:/app/server.properties
       - $SERVERDIR:/app/worlds
     ports:

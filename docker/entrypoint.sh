@@ -8,7 +8,7 @@
 #echo "helo!"
 #echo "oops"
 
-rm -rf /app/.git
+echo "eula=true" > eula.txt
 
 if [ $RUN_SERVER = "true" ] ; then
     echo "is true";
