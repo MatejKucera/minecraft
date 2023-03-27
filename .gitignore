@@ -2,7 +2,6 @@
 .code
 server/*
 logs/*
-eula.txt
 .env
 plugins/*
 !plugins/*.jar
