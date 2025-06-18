@@ -8,7 +8,7 @@ RUN apt-get install git wget software-properties-common -yqq
 WORKDIR /app
 
 COPY docker/source/BuildTools.jar /app/BuildTools.jar
-RUN java -Xmx4G -jar BuildTools.jar -rev 1.21.1 
+RUN java -Xmx4G -jar BuildTools.jar -rev 1.21.6
 
 COPY docker/entrypoint.sh /entrypoint.sh
 
