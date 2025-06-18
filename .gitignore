@@ -2,6 +2,7 @@
 .code
 server/*
 logs/*
+worlds/*
 .env
 plugins/*
 !plugins/*.jar
