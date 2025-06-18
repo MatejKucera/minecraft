@@ -17,3 +17,4 @@ services:
       - $GAME_PORT:25565
       - $RCON_PORT:25575
       - $BLUEMAP_PORT:8100
+      - $DYNMAP_PORT:8123
