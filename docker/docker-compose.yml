@@ -12,7 +12,7 @@ services:
     #  - ../:/app
       - ../plugins:/app/plugins
       - ../server.properties:/app/server.properties
-      - $SERVERDIR/worlds:/app/worldsc
+      - $SERVERDIR/worlds:/app/worlds
       - $SERVERDIR/bluemap:/app/bluemap
     ports:
       - $GAME_PORT:25565
