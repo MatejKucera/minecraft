@@ -12,7 +12,8 @@ services:
     #  - ../:/app
       - ../plugins:/app/plugins
       - ../server.properties:/app/server.properties
-      - $SERVERDIR/worlds:/app/worlds
+      - $SERVERDIR/worlds:/app/worldsc
+      - $SERVERDIR/bluemap:/app/bluemap
     ports:
       - $GAME_PORT:25565
       - $RCON_PORT:25575
